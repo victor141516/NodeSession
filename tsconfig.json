@@ -1,0 +1,33 @@
+{
+    "ts-node": {
+        "transpileOnly": true
+    },
+    "compilerOptions": {
+        /* Basic Options */
+        "target": "ES2019",
+        "module": "commonjs",
+        "lib": [
+            "es2020",
+            "DOM"
+        ],
+        "declaration": true,
+        "outDir": "dist",
+        "sourceMap": true,
+        /* Strict Type-Checking Options */
+        "strict": true,
+        /* Additional Checks */
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "compileOnSave": true,
+    "include": [
+        "./*.ts"
+    ]
+}
