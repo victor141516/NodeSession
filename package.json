@@ -15,6 +15,7 @@
   "bugs": {
     "url": "https://github.com/victor141516/NodeSession/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/victor141516/NodeSession#readme",
   "dependencies": {
     "async-mutex": "^0.2.4",
