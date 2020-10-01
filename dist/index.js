@@ -24,7 +24,7 @@ const async_mutex_1 = require("async-mutex");
 const node_fetch_1 = __importStar(require("node-fetch"));
 const url_1 = require("url");
 const hostRegex = /^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)?(.*)?(#[\w\-]+)?$/;
-const cookiesRegex = /([0-9a-zA-Z\-_]+)=([^;]+); (?:(?:(expires)=([^;]+))|(?:Max-Age=([0-9]+))|(?:(path)=([^;]+))|(httponly)?(?:; )?){0,4}/gim;
+const cookiesRegex = /([0-9a-zA-Z\-_\.]+)=([^;]+); (?:(?:(expires)=([^;]+))|(?:Max-Age=([0-9]+))|(?:(path)=([^;]+))|(httponly)?(?:; )?){0,4}/gim;
 class Cookie {
     constructor(name, value) {
         this.name = name;
