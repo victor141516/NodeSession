@@ -2,7 +2,7 @@ import { Mutex } from 'async-mutex';
 import fetch, { Headers, Request, RequestInfo, RequestInit, Response } from 'node-fetch';
 import { URL } from 'url';
 
-const hostRegex = /^((http[s]?|ftp):\/)?\/?([^:\/\s]+)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)?(.*)?(#[\w\-]+)?$/;
+const hostRegex = /^((http[s]?|ftp):\/)?\/?([^:\/\s]+(?::[0-9]+)?)((\/\w+)*\/)([\w\-\.]+[^#?\s]+)?(.*)?(#[\w\-]+)?$/;
 const cookiesRegex = /([0-9a-zA-Z\-_\.]+)=([^;]+); (?:(?:(expires)=([^;]+))|(?:Max-Age=([0-9]+))|(?:(path)=([^;]+))|(httponly)?(?:; )?){0,4}/gim;
 
 export class Cookie {
